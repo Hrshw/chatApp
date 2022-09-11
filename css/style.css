@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color:#151320; */
+    background-image:url(../images/download.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.waraper{
+    color: whitesmoke;
+    background-color:#151320;;
+    width: 450px;
+    border-radius: 6px;
+    text-align: center;
+    position: relative;
+   border-radius: 15px;
+}
+
+.form{
+    padding: 25px 30px;
+    text-align: left;
+}
+
+.form header{
+    color: #fff;
+    font-size: 25px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 1px solid orange;
+    padding-bottom: 10px;
+}
+
+.form form{
+    margin: 30px 0;
+}
+.form form .user-deatils{
+    display: flex;
+}
+form .user-deatils .field:first-child{
+    margin-right: 10px;
+}
+form .user-deatils .field:last-child{
+    margin-left: 10px;
+}
+.form form .error-text{
+    font-size: large;
+    color: rgb(171, 20, 20);
+    padding-bottom: 10px;
+    text-align: center;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 2px solid rgb(112, 133, 195);
+    background-color: rgb(241, 214, 150);
+    display: none;
+}
+.form form .field label{
+    margin-bottom: 5px;
+    font-size: larger;
+}
+.form form .field{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form form .field i{
+    position: absolute;
+    right: 15px;
+    top: 70%;
+    color: wheat;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.form form .field i.active::before{
+    color: #333;
+    content: "\f070";
+}
+
+.form form .input input{
+    height: 40px;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.form form .image input{
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.form form .image .btn{
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form form .image input[type=file] {
+    font-size: 30px;
+    margin: 28px 19px;
+    right: -10px;
+    position: absolute;
+    opacity: 0;
+  }
+a{
+    text-decoration: none;
+}
+  form .button input{
+    padding: 15px;
+    font-size: 20px;
+    margin: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .link{
+   text-align: center;
+   font-size: 20px;
+  }
+  .form::before,
+  .form::after{
+    content: ' ';
+    z-index: -1;
+    position: absolute;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    top: -15px;
+    left: -15px;
+    /* background: linear-gradient(45deg,
+    #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000,
+    #ff0055, #ff0000, #ffff00, #00ff00, #0099ff, #001aff, #a200ff
+    ); */
+    /* background-size: 300%; */
+    background: #00ff00;
+    /* animation: border 12s linear infinite; */
+    border-radius: 15px;
+  }
+
+  /* .form::after{
+    filter: blur(80px);
+
+  } */
+
+  /* @keyframes border{
+    0%, 100%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 300%;
+    }
+  } */
+
+  /* users styles from here */
+
+  .wrapper{
+    color: rgb(139, 89, 89);
+    background-color:#8f8e96;;
+    width: 450px;
+    border-radius: 6px;
+    text-align: center;
+    position: relative;
+   border-radius: 15px;
+}
+.users{
+    padding: 25px 30px;
+}
+.users header{
+    color: #fff;
+    font-size: 25px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 1px solid orange;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.users .use-details, 
+.users-list a{
+    display: flex;
+    color: #ccc;
+    align-items: center;
+    justify-content: space-between; 
+    border-bottom: 1px solid whitesmoke;
+    margin-bottom: 30px;
+}
+.users .content{
+    display: flex;
+    text-align: left;
+}
+.users .content p{
+    font-size: 15px;
+}
+.users .content span{
+    color: #151320;
+}
+.content img{
+    object-fit: cover;
+    border-radius: 50%;
+}
+.users .content img{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+.users .details{
+   margin-left: 15px;
+    font-size: larger;
+}
+.users .logout{
+    background-color: #151320;
+    padding: 10px 20px;
+    border-radius: 12px;
+}
+
+.users .logout:hover{
+    color: white;
+    border: 1px solid rgb(244, 237, 237);
+}
+.users .search{
+    margin: 20px 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 19px;
+}
+.users .search .text{
+    font-size: 18px;
+}
+.users .search input{
+    padding: 10px;
+    height: 42px;
+    width: calc(100% - 50px);
+    position: absolute;
+    border: 0 solid #ffff;
+    border-radius: 13px;
+    outline: none;
+    opacity: 0;
+    pointer-events: none;
+}
+.users .search input.active{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.3s ease-in-out;
+}
+.users .search button{
+    padding: 15px 15px;
+    border-radius: 13px;
+    cursor: pointer;
+}
+.users .search button.active{
+    background: #151320;
+    color: white;
+    border-radius: 13px;
+}
+.users .search button.active i::before{
+    content: "\f00d";
+}
+.users-list{
+    max-height: 350px;
+    overflow-y: auto;
+}
+:is(.users-list, .chat-box)::-webkit-scrollbar{
+    width: 0px;
+}
+.users-list a{
+    margin-bottom: 15px;
+    page-break-after: 10px;
+    padding-right: 20px;
+    border-bottom-color: #292738;
+}
+.users-list a .content img{
+    width: 40px;
+    height: 40px;
+}
+.users-list .status-dot{
+    font-size: 12px;
+    color: #00ff00;
+    margin-bottom: 35px;
+}
+
+/* use this class to show user offline */
+.users-list .status-dot.offline{
+    font-size: 12px;
+    color: #e1e7e1;
+    margin-bottom: 35px;
+}
+
+
+/* this style is use for chat area */
+.chat-area{
+    display: flex;
+}
+.chat-area  .chat-content{
+display: flex;
+align-items: center;
+gap: 15px;
+padding: 18px 30px;
+}
+.chat-content img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.chat-box{
+    overflow-y: auto;
+    height: 500px;
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    box-shadow: inset 17px 22px 5px -16px rgb(170, 185, 200),
+               inset 20px 12px 10px -20px rgb(224, 211, 211),
+               inset 10px 5px 5px -2px rgb(87, 162, 111);
+}
+.chat-box .incoming{
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+.chat-box .incoming img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+.chat-box .outgoing{
+    display: flex;
+}
+.chat-box .chat p{
+    word-wrap: break-word;
+    padding: 8px 31px;
+    text-align: start;
+    box-shadow: 0 0 12px darkcyan;
+}
+.outgoing .details{
+    margin-left: auto;
+    max-width: calc(100% - 130px);
+    margin-bottom: 20px;
+}
+.outgoing .details p{
+    background-color: #292738;
+    color: white;
+    border-radius: 18px 18px 0px 38px;
+    align-items: center;
+}
+.incoming .details{
+    margin-right: auto;
+    max-width: calc(100% - 130px);
+    margin-bottom: 20px;
+}
+.incoming .details p{
+    background-color: #292738;
+    color: white;
+    border-radius: 38px 18px 18px 0;
+} 
+.typing-area{
+  display: flex;
+  padding: 10px;
+}
+.typing-area input{
+ padding: 10px;
+ width: 70%;
+ border-radius: 12px;
+ font-size: 20px;
+ outline: none;
+ border: 1px solid white;
+ margin: 12px;
+ margin-left: 8px;
+ line-break: normal;
+ 
+}
+.typing-area  i{
+    font-size: 40px;
+}
+.typing-area button{
+    border-radius: 50%;
+    height: calc(100% - 150px);
+    align-self: center;
+    border: 0 solid white;
+    cursor: pointer;
+}
